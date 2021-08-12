@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Baloo Chettan 2', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    /*display*/
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    align-items: center; */
+}
+
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-color: lavenderblush;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform .5s ease-in-out
+}
+
+.right-slide>div {
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+    max-width: 100%;
+    width: 500px;
+    scroll-behavior: smooth;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h3 {
+    color: #9370db;
+    font-size: 3rem;
+    opacity: 0.4rem;
+    text-align: center;
+}
+
+.input {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    color: #a036d1;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 1rem;
+    display: block;
+}
+
+.input:focus {
+    outline-color: #e6a8d7;
+}
+
+.input::placeholder {
+    color: #e6a8d7;
+    font-size: 1.4rem;
+}
+
+.todos {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: #a036d1;
+    font-size: 1rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.todos li {
+    text-align: left;
+    border-top: 1px solid #796f6f;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+.main {
+    background-color: #e6a8d7;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.todos li.completed {
+    color: #c9a0dc;
+    text-decoration-line: line-through;
+    background-color: #c9ffe5;
+}
+
+.ending {
+    display: flex;
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+    background-color: #f5f5f5;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.down-button:hover {
+    color: black;
+}
